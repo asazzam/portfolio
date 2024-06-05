@@ -1,8 +1,18 @@
-const hamMenu = document.querySelector(".ham-menu");
+const hamburgerMenu = document.querySelector(".fa-bars");
+const xMenu = document.querySelector(".fa-x");
+const navMenu = document.querySelector(".nav-menu");
+const navItems = document.querySelectorAll(".nav-menu a");
 
-const offScreenMenu = document.querySelector(".off-screen-menu");
+hamburgerMenu.addEventListener("click", function () {
+  navMenu.classList.add("active");
+});
 
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
+xMenu.addEventListener("click", function () {
+  navMenu.classList.remove("active");
+});
+
+navItems.forEach(function (link) {
+  link.addEventListener("click", function () {
+    navMenu.classList.remove("active");
+  });
 });
