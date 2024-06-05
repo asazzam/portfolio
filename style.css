@@ -1,6 +1,16 @@
 body {
+  margin: 0;
   background-color: #1a1a1a;
   color: #e6e6e6;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 header {
@@ -9,6 +19,24 @@ header {
   align-items: center;
 }
 
+.gradient-text {
+  background: linear-gradient(
+    45deg,
+    #ff6961,
+    #ffb347,
+    #fdfd96,
+    #77dd77,
+    #aec6cf,
+    #cba6e6,
+    #fcb1c8
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Navigation Menu */
 .hamburger-menu {
   cursor: pointer;
   font-size: 2.5rem;
@@ -16,6 +44,7 @@ header {
 
 .nav-menu {
   background-color: #414141;
+  opacity: 98%;
   width: 100%;
   display: none;
   flex-direction: column;
@@ -26,6 +55,7 @@ header {
   right: 0;
   bottom: 0;
   padding-top: 60px;
+  transition: background-color 0.3s ease;
 }
 
 .nav-menu i {
@@ -56,6 +86,7 @@ header {
     #fcb1c8
   );
   color: #1a1a1a;
+  border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   padding: 0 15px;
   background-size: 400%;
@@ -76,4 +107,14 @@ header {
 
 .nav-menu.active {
   display: flex;
+}
+
+.header-greeting {
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 3px 9px rgba(45, 40, 40, 0.3);
+}
+
+.project-card {
+  border: 2px solid;
 }
