@@ -115,6 +115,26 @@ header {
   box-shadow: 0 3px 9px rgba(45, 40, 40, 0.3);
 }
 
-.project-card {
+/* Project Cards */
+
+/* .projects-container {
   border: 2px solid;
+  border-radius: 5px;
+} */
+
+.project-card {
+  margin: 0 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 0 auto;
 }
